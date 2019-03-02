@@ -28,22 +28,37 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp6').waypoint(function () {
-        $('.wp6').addClass('animated fadeInRight');
+        $('.wp6').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
     $('.wp7').waypoint(function () {
-        $('.wp7').addClass('animated fadeInUp');
+        $('.wp7').addClass('animated fadeInLeft');
     }, {
         offset: '75%'
     });
     $('.wp8').waypoint(function () {
-        $('.wp8').addClass('animated fadeInLeft');
+        $('.wp8').addClass('animated fadeInRight');
     }, {
         offset: '75%'
     });
     $('.wp9').waypoint(function () {
-        $('.wp9').addClass('animated fadeInRight');
+        $('.wp9').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp10').waypoint(function () {
+        $('.wp10').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wpxs1').waypoint(function () {
+        $('.wpxs1').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wpxs2').waypoint(function () {
+        $('.wpxs2').addClass('animated fadeInLeft');
     }, {
         offset: '75%'
     });
