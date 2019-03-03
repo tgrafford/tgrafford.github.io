@@ -209,10 +209,10 @@ $(document).ready(function () {
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            // end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Jun 16, 2019 00:00'),
 
             // Event Address
-            address: 'Nyckelviksvägen 1, 131 49 Nacka',
+            address: 'Nyckelviksvägen 1, 131 49 Nacka, Sweden',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues contact Tim Grafford at +46 705116155."
@@ -229,21 +229,16 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        /* if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
-        } else { */
-            $.post('https://script.google.com/macros/s/AKfycbzgJOZyF_kZUObxs3qFlnQiMz9VEBVepZKZpI70/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html('');
-                    $('#rsvp-modal').modal('show');
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
-                });
-        /* } */
+        $.post('https://script.google.com/macros/s/AKfycbzgJOZyF_kZUObxs3qFlnQiMz9VEBVepZKZpI70/exec', data)
+            .done(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html('');
+                $('#rsvp-modal').modal('show');
+            })
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+            });
     });
 
 });
