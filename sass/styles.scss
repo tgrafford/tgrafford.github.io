@@ -104,6 +104,18 @@ section .header {
   background-color: #000;
   border-radius: 4px;
 }
+::-webkit-input-placeholder {
+  font-weight: normal;
+}
+::-moz-placeholder {
+  font-weight: normal;
+}
+:-ms-input-placeholder {
+  font-weight: normal;
+}
+::placeholder {
+  font-weight: normal;
+}
 /* ==========================================================================
 Animations
 ========================================================================== */
