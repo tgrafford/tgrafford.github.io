@@ -240,6 +240,20 @@ function initMap() {
     });
 }
 
+function initBusMap() {
+    var the_bus = {lat: 59.330816, lng: 18.057900};
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 15,
+        center: the_bus,
+        scrollwheel: false
+    });
+
+    var marker = new google.maps.Marker({
+        position: the_bus,
+        map: map
+    });
+}
+
 // alert_markup
 function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
