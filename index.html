@@ -1,67 +1,492 @@
-<!DOCTYPE html>
-<html>
-<title>Tim & Matilda - Coming soon</title>
-<style>
-    body,
-    html {
-        height: 100%;
-        margin: 0;
-    }
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Tim & Matilda are getting married!</title>
+    <meta name="description" content="We would like to invite you to our big day.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Tim & Matilda are getting married">
+    <meta property="og:description" content="We would like to invite you to our big day.">
+    <!-- TODO: fix? <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg"> -->
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135444862-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    .bgimg {
-        background-image: url('img/comingsoon-min.jpg');
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        color: white;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 25px;
-    }
-
-    .topleft {
-        position: absolute;
-        top: 0;
-        left: 16px;
-    }
-
-    .bottomleft {
-        position: absolute;
-        bottom: 0;
-        left: 16px;
-    }
-
-    .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    hr {
-        margin: auto;
-        width: 40%;
-    }
-
-    .logo img {
-        height: 19px;
-    }
-</style>
-
-<body>
-
-    <div class="bgimg">
-        <div class="topleft">
-            <p class="logo"><img src="img/logo.png"></p>
-            <!-- <p>Logo</p> -->
+    gtag('config', 'UA-135444862-1');
+    </script>    
+</head>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#intro">How we met</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#information">Information</a></li>
+                            <!--<li><a href="#instagram">Instagram</a></li>-->
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <!--<h1>Tim and Matilda</h1>-->
+                    <img src="img/logo-lg.png">
+                    <!--<p class="intro">Tim & Matilda are getting hitched!</p>-->
+                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                </div>
+            </div>
         </div>
-        <div class="middle">
-            <h1>COMING SOON</h1>
-            <hr>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
+                                                           class="btn btn-accent btn-fill btn-large rsvp-btn">RSVP</a></div>
+            <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fas fa-angle-down"></i></a></div>
+</section>
 
+<section id="invitation" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>We are getting married</h3>
+                <p>The date is 15<sup>th</sup> of June '19 and we would like you to be a part of it.</p>
+                <!-- <div class="share-bar"></div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">How we met</h3>
+            </div>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-badge" data-aos="flip-right"><i class="fas fa-heart"></i></div>
+                <div class="timeline-panel" data-aos="fade-right">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">First love</h4>
+                        <p><small class="text-muted">2003</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>We were each others first love. Although too young and timid to risk our frienship, nothing more happened of this.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge" data-aos="flip-left"><i class="fas fa-kiss-beam"></i></div>
+                <div class="timeline-panel" data-aos="fade-left">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">First kiss</h4>
+                        <p><small class="text-muted">2008</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Trip to Åland together with Tims family brought us two closer together.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge" data-aos="flip-right"><i class="fas fa-heart-broken"></i></div>
+                <div class="timeline-panel" data-aos="fade-right">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">First heartbreak</h4>
+                        <p><small class="text-muted">2008</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Matilda moved to Spain.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge" data-aos="flip-left"><i class="fas fa-handshake"></i></div>
+                <div class="timeline-panel" data-aos="fade-left">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Friendship still remained...</h4>
+                        <p><small class="text-muted">2008-2015</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>We still kept contact during all the years Matilda was in Spain.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge" data-aos="flip-right"><i class="fas fa-fire"></i></div>
+                <div class="timeline-panel" data-aos="fade-right">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Comeback!</h4>
+                        <p><small class="text-muted">2015</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>After 7 years apart we both found each other again when Matilda was back to Stockholm to sell her apartment.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge" data-aos="flip-left"><i class="fas fa-ring"></i></div>
+                <div class="timeline-panel" data-aos="fade-left">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">We are engaged!</h4>
+                        <p><small class="text-muted">2016</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>At Skeppsholmen in Nacka Tim popped the question, and she said <strong>yes!</strong></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+            <!--
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">How we met</h3>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/tim.png" class="wp1"></div>
+            <div class="col-md-6">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus sem, bibendum eu varius vel, tristique eu dolor. Nunc a orci condimentum, tincidunt lectus at, blandit urna. Nunc egestas turpis non semper vulputate. Donec eget accumsan nunc, vel lobortis nulla. Proin sit amet tincidunt velit. Maecenas feugiat nisi in pellentesque porta. Pellentesque aliquam sapien accumsan lacus vehicula, quis dignissim felis egestas. Mauris sit amet placerat massa. Sed mollis purus sit amet lacus ullamcorper pharetra vel vel lectus.
+                </p>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/matilda.png" class="wp2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wpxs1"></div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wpxs2"></div>
+        </div>
+    </div>-->
+</section>
+
+<section class="events section-padding" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Events</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div data-aos="fade-right">
+                    <h5>Bus shuttle <span class="time">15:45</span></h5>
+                    <p>A bus from the city central in Stockholm will depart at 15:45 and arrive at the ceremony for those who wish. More information on where the bus will depart will come shortly.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h5>Ceremony <span class="time">16:30 - 17:00</span></h5>
+                    <p>The ceremony will be held at <a href="#map">Nyckelvikens Herrgård</a>. Following the ceremony we will pop the champagne and have a toast for the bride and groom.</p>
+                </div>
+                <div data-aos="fade-right">
+                    <h5>Dinner <span class="time">18:00 - 22:00</span></h5>
+                    <p>A three course dinner will be served, whilst speeches will be held inbetween the servings. Drinks will be provided.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h5>Party <span class="time">22:00 - <i>late</i></span></h5>
+                    <p>We will move to the main build in which the partying will start. Lights and music people, bring your dancing shoes! Drinks at own cost.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row section-padding justify-content-center">
+            <div class="col-md-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fas fa-barcode"></i>&nbsp;&nbsp;Dress code
+                </a>
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-xs-12 section-border section-padding">
+            </div>
+        </div>-->
+    </div>
+
+    <section class="section-padding" id="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="header">Information</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div data-aos="fade-right">
+                        <h5>Want to hold a speach?</h5>
+                        <p> As some of our guests are internalitional we hope for you to have your speech in English. Please contact our toastmadame Camilla Garthéus <i>(contact information coming soon)</i> for your speech.</p>
+                    </div>
+                    <div data-aos="fade-right">
+                        <h5>Parking</h5>
+                        <p>Parking is available by the mansion. Just drive as far down Nyckelviksvägen as you can, you will hit a dead-end where the nearest parking lot is.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div data-aos="fade-left">
+                        <h5>Are children invited?</h5>
+                        <p>We would love to give all our guests the opportunity to let their hair down and have a good time without having to worry about little eyes and ears so we politely request no children.</p>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h5>Where can I stay?</h5>
+                        <p>Check out <a href="https://www.agoda.com/pages/agoda/default/DestinationSearchResult.aspx?asq=u2qcKLxwzRU5NDuxJ0kOF%2B38xwhPX915qpTJHuNbNst%2B1V2tgx4CZi02ivMuPRcEqM%2BGXrAG9ikLczFpJ%2FzwB0WE2jkGop%2B4ghmDo51%2BcGIdRjNPkpct04fF5NFk%2FXHYq%2BZpUl8LReY7GNCgzoNLe7YofR6FQX%2F8s3rVCA7dzRV0pPzPHlbkGKgx1S4b%2F%2BqD6nnzqywK515SJHFCGW4iTQ%3D%3D&city=1618&tick=636872475220&languageId=1&userId=5fc02f61-9047-4203-ac10-86af0d174b79&sessionId=eeohpszd3iwvua3zn0er05f2&pageTypeId=1&origin=SE&locale=en-US&cid=-1&aid=130243&currencyCode=EUR&htmlLanguage=en-us&cultureInfoName=en-US&ckuid=5fc02f61-9047-4203-ac10-86af0d174b79&prid=0&checkIn=2019-06-15&checkOut=2019-06-16&rooms=1&adults=2&children=0&priceCur=EUR&los=1&textToSearch=Stockholm&travellerType=1&hotelArea=58876,57992,57991,57990,58771,57988&productType=-1&sort=agodaRecommended" target="_blank">agoda</a> to find the best hotel prices in Stockholm for your stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Ugh... dress codes?</h3>
+                    <p>
+                        <strong>Cocktail attire</strong><br>
+                        A cocktail attire look typically includes a <a href="https://www.pinterest.se/tigr9454/cocktail-attire-for-men/" target="_blank">suite and tie</a> for gentlemen, and <a href="https://www.pinterest.se/tigr9454/cocktail-attire-for-women/" target="_blank">dresses that finish at or above the knee</a> for ladies.<br>
+                        Last year on this date in June, the high temperature was 22° and the low was 17°. The average evening in June is around 20°.
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</section>
+<!--
+<section id="instagram" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>A picture is worth a thousand words!</h3>
+                <p>Help us capture the moment, tag your photos with the hashtag
+                    <a href="https://instagram.com/explore/tags/timandmatilda/" target="_blank">#TimAndMatilda</a>
+                </p>
+            </div>
+        </div>
+        <div class="row section-border justify-content-center" data-aos="fade-up">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/iphone_instagram-min.png">
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://youtu.be/pckTcex20U4',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:270, opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Stockholm</h5>
+        <p>Capital of Scandinavia</p>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>How do I get there?</h3>
+        <p>We will provide a bus shuttle from city central (location still not set). We will update with more information once we know more.</p>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row justify-content-center">
+            <div class="col-6 col-xs-10">
+            <!--<div class="xs-offset-1 col-xs-10 md-offset-3 col-md-6">-->
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fas fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Nyckelvikens Herrgård</h5>
+                            <p>Nyckelviksvägen 1<br>131 49 Nacka, Sweden</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Taxi Stockholm</h5>
+                            <p><i class="fas fa-phone"></i> <a href="tel://+468150000">+46 8150000</a></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small" id="btn-show-map"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Show
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rsvp text-center" id="rsvp">
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Thank you!</h3>
+                        <p>We are glad to see you join us on our big day.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h3>What are you waiting for?</h3>
+                <p>We would greatly appreciate if you could RSVP before 15th of April '19</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fas fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fas fa-user"></i><input name="name" class=""
+                                                                 placeholder="Your name"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fas fa-user-plus"></i><input name="plusone" class=""
+                                                                    placeholder="Plus one name (optional)">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fas fa-utensils"></i><input name="foodpreferences" class=""
+                                                                    placeholder="Food preferences (optional)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-accent">
+                                    <input type="radio" name="attendence" id="attending" value="attending" required> Attending
+                                </label>
+                                <label class="btn btn-accent">
+                                    <input type="radio" name="attendence" id="not_attending" value="not_attending"> Not attending
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-accent">
+                                    <input type="radio" name="bus" value="yes" required> Bus shuttle
+                                </label>
+                                <label class="btn btn-accent">
+                                    <input type="radio" name="bus" value="no" required> No bus shuttle 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Yes,
+                        that's me!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fas fa-angle-up"></i></a></span>
+                <p>
+                    Crafted by Tim with lots of <span class="fas fa-heart pulse2"></span> for Matilda<br>
+                    <a style="padding-top: -10px" aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com/tgrafford/tgrafford.github.io" target="_blank">
+                        <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.9/jquery.mb.YTPlayer.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5gwLrm0wgH3IjuAS7RrxVgmIEPciFYb4&callback=initMap"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
-
 </html>
