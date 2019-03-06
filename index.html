@@ -245,10 +245,6 @@
                 </a>
             </div>
         </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
     </div>
 
     <section class="section-padding" id="information">
@@ -282,23 +278,6 @@
             </div>
         </div>
     </section>
-
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Ugh... dress codes?</h3>
-                    <p>
-                        <strong>Cocktail attire</strong><br>
-                        A cocktail attire look typically includes a <a href="https://www.pinterest.se/tigr9454/cocktail-attire-for-men/" target="_blank">suite and tie</a> for gentlemen, and <a href="https://www.pinterest.se/tigr9454/cocktail-attire-for-women/" target="_blank">dresses that finish at or above the knee</a> for ladies.<br>
-                        Last year on this date in June, the high temperature was 22° and the low was 17°. The average evening in June is around 20°.
-                    </p>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 
 </section>
 <!--
@@ -338,7 +317,7 @@
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row justify-content-center">
-            <div class="col-6 col-xs-10">
+            <div class="col-md-6">
             <!--<div class="xs-offset-1 col-xs-10 md-offset-3 col-md-6">-->
                 <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
@@ -499,6 +478,23 @@
         </div>
     </div>
 </footer>
+
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dc-header">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 id="dc-header"class="text-center section-padding">Ugh... dress codes?</h3>
+                    <p>
+                        <strong>Cocktail attire</strong><br>
+                        A cocktail attire look typically includes a <a href="https://www.pinterest.se/tigr9454/cocktail-attire-for-men/" target="_blank">suite and tie</a> for gentlemen, and <a href="https://www.pinterest.se/tigr9454/cocktail-attire-for-women/" target="_blank">dresses that finish at or above the knee</a> for ladies.<br>
+                        Last year on this date in June, the high temperature was 22° and the low was 17°. The average evening in June is around 20°.
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
