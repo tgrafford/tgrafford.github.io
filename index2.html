@@ -23,16 +23,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135444862-1"></script>
     <script>
@@ -116,8 +117,8 @@
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-badge"><i class="fas fa-heart"></i></div>
-                <div class="timeline-panel">
+                <div class="timeline-badge" data-aos="flip-right"><i class="fas fa-heart"></i></div>
+                <div class="timeline-panel" data-aos="fade-right">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">First love</h4>
                         <p><small class="text-muted">2003</small></p>
@@ -128,8 +129,8 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-badge"><i class="fas fa-kiss-beam"></i></div>
-                <div class="timeline-panel">
+                <div class="timeline-badge" data-aos="flip-left"><i class="fas fa-kiss-beam"></i></div>
+                <div class="timeline-panel" data-aos="fade-left">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">First kiss</h4>
                         <p><small class="text-muted">2008</small></p>
@@ -140,8 +141,8 @@
                 </div>
             </li>
             <li>
-                <div class="timeline-badge"><i class="fas fa-heart-broken"></i></div>
-                <div class="timeline-panel">
+                <div class="timeline-badge" data-aos="flip-right"><i class="fas fa-heart-broken"></i></div>
+                <div class="timeline-panel" data-aos="fade-right">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">First heartbreak</h4>
                         <p><small class="text-muted">2008</small></p>
@@ -152,8 +153,8 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-badge"><i class="fas fa-handshake"></i></div>
-                <div class="timeline-panel">
+                <div class="timeline-badge" data-aos="flip-left"><i class="fas fa-handshake"></i></div>
+                <div class="timeline-panel" data-aos="fade-left">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Friendship still remained...</h4>
                         <p><small class="text-muted">2008-2015</small></p>
@@ -164,8 +165,8 @@
                 </div>
             </li>
             <li>
-                <div class="timeline-badge"><i class="fas fa-fire"></i></div>
-                <div class="timeline-panel">
+                <div class="timeline-badge" data-aos="flip-right"><i class="fas fa-fire"></i></div>
+                <div class="timeline-panel" data-aos="fade-right">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Comeback!</h4>
                         <p><small class="text-muted">2015</small></p>
@@ -176,8 +177,8 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-badge"><i class="fas fa-ring"></i></div>
-                <div class="timeline-panel">
+                <div class="timeline-badge" data-aos="flip-left"><i class="fas fa-ring"></i></div>
+                <div class="timeline-panel" data-aos="fade-left">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">We are engaged!</h4>
                         <p><small class="text-muted">2016</small></p>
@@ -219,26 +220,26 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="wp3">
+                <div data-aos="fade-right">
                     <h5>Bus shuttle <span class="time">15:45</span></h5>
                     <p>A bus from the city central in Stockholm will depart at 15:45 and arrive at the ceremony for those who wish. More information on where the bus will depart will come shortly.</p>
                 </div>
-                <div class="wp3">
+                <div data-aos="fade-left">
                     <h5>Ceremony <span class="time">16:30 - 17:00</span></h5>
                     <p>The ceremony will be held at <a href="#map">Nyckelvikens Herrgård</a>. Following the ceremony we will pop the champagne and have a toast for the bride and groom.</p>
                 </div>
-                <div class="wp4">
+                <div data-aos="fade-right">
                     <h5>Dinner <span class="time">18:00 - 22:00</span></h5>
                     <p>A three course dinner will be served, whilst speeches will be held inbetween the servings. Drinks will be provided.</p>
                 </div>
-                <div class="wp5">
+                <div data-aos="fade-left">
                     <h5>Party <span class="time">22:00 - <i>late</i></span></h5>
                     <p>We will move to the main build in which the partying will start. Lights and music people, bring your dancing shoes! Drinks at own cost.</p>
                 </div>
             </div>
         </div>
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
+        <div class="row section-padding justify-content-center">
+            <div class="col-md-4 text-center">
                 <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
                     <i class="fas fa-barcode"></i>&nbsp;&nbsp;Dress code
                 </a>
@@ -259,21 +260,21 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                    <div class="wp7">
+                    <div data-aos="fade-right">
                         <h5>Want to hold a speach?</h5>
                         <p> As some of our guests are internalitional we hope for you to have your speech in English. Please contact our toastmadame Camilla Garthéus <i>(contact information coming soon)</i> for your speech.</p>
                     </div>
-                    <div class="wp9">
+                    <div data-aos="fade-right">
                         <h5>Parking</h5>
                         <p>Parking is available by the mansion. Just drive as far down Nyckelviksvägen as you can, you will hit a dead-end where the nearest parking lot is.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                    <div class="wp8">
+                    <div data-aos="fade-left">
                         <h5>Are children invited?</h5>
                         <p>We would love to give all our guests the opportunity to let their hair down and have a good time without having to worry about little eyes and ears so we politely request no children.</p>
                     </div>
-                    <div class="wp10">
+                    <div data-aos="fade-left">
                         <h5>Where can I stay?</h5>
                         <p>Check out <a href="https://www.agoda.com/pages/agoda/default/DestinationSearchResult.aspx?asq=u2qcKLxwzRU5NDuxJ0kOF%2B38xwhPX915qpTJHuNbNst%2B1V2tgx4CZi02ivMuPRcEqM%2BGXrAG9ikLczFpJ%2FzwB0WE2jkGop%2B4ghmDo51%2BcGIdRjNPkpct04fF5NFk%2FXHYq%2BZpUl8LReY7GNCgzoNLe7YofR6FQX%2F8s3rVCA7dzRV0pPzPHlbkGKgx1S4b%2F%2BqD6nnzqywK515SJHFCGW4iTQ%3D%3D&city=1618&tick=636872475220&languageId=1&userId=5fc02f61-9047-4203-ac10-86af0d174b79&sessionId=eeohpszd3iwvua3zn0er05f2&pageTypeId=1&origin=SE&locale=en-US&cid=-1&aid=130243&currencyCode=EUR&htmlLanguage=en-us&cultureInfoName=en-US&ckuid=5fc02f61-9047-4203-ac10-86af0d174b79&prid=0&checkIn=2019-06-15&checkOut=2019-06-16&rooms=1&adults=2&children=0&priceCur=EUR&los=1&textToSearch=Stockholm&travellerType=1&hotelArea=58876,57992,57991,57990,58771,57988&productType=-1&sort=agodaRecommended" target="_blank">agoda</a> to find the best hotel prices in Stockholm for your stay.</p>
                     </div>
@@ -311,7 +312,7 @@
                 </p>
             </div>
         </div>
-        <div class="row section-border wp6">
+        <div class="row section-border justify-content-center" data-aos="fade-up">
             <div class="col-md-4 col-md-offset-4">
                 <img src="img/iphone_instagram-min.png">
             </div>
@@ -336,8 +337,9 @@
     </div>
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <div class="row justify-content-center">
+            <div class="col-6 col-xs-10">
+            <!--<div class="xs-offset-1 col-xs-10 md-offset-3 col-md-6">-->
                 <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
                         <i class="fas fa-info-circle"></i>&nbsp;&nbsp; Show info
@@ -355,13 +357,9 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
+                        <div class="col-md-12" style="padding: 5px;">
                             <a class="btn btn-fill btn-small" id="btn-show-map"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Show
                                 map</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" target="_blank"
-                            href="https://sl.se/en/#/Travel/SearchTravelByDestinationPosition/Slussen%20(Stockholm)/Nyckelviksv%C3%A4gen%201,%20Nacka/59.322648/18.18987/9192/null/depart/en/null/null/2,8,1,4,96,/null/null/null/null/null/false/null/0/0/null/false/0/,0/0/,0/normal"><i class="fas fa-bus"></i>&nbsp;&nbsp;Take the bus</a>
                         </div>
                     </div>
                 </div>
@@ -388,8 +386,8 @@
     </div><!-- /.modal -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 15th of April '19</p>
                 <form id="rsvp-form" class="rsvp-form"
@@ -425,36 +423,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-2">
                         <div class="col-md-6 col-sm-6">
-                                <label class="radio-inline">
-                                    <input type="radio" name="attendence" value="attending" required> Attenting
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-accent">
+                                    <input type="radio" name="attendence" id="attending" value="attending" required> Attenting
                                 </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="attendence" value="not_attending"> Not attenting
+                                <label class="btn btn-accent">
+                                    <input type="radio" name="attendence" id="not_attending" value="not_attending"> Not attenting
                                 </label>
+                            </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                                <label class="radio-inline">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-accent">
                                     <input type="radio" name="bus" value="yes" required> Bus shuttle
                                 </label>
-                                <label class="radio-inline">
+                                <label class="btn btn-accent">
                                     <input type="radio" name="bus" value="no" required> No bus shuttle 
                                 </label>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div id="attendence" class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-accent" for="attend">
-                                    <input type="radio" id="attend" name="attendence" data-toggle="button"> Attend
-                                </label>
-                                <label class="btn btn-accent" for="cant">
-                                    <input type="radio" id="cant" name="attendence" data-toggle="button">Can't
-                                </label>
-                            </div>                 
-                        </div>
-                    </div> -->
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
@@ -486,16 +476,17 @@
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.2.9/jquery.mb.YTPlayer.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5gwLrm0wgH3IjuAS7RrxVgmIEPciFYb4&callback=initMap"></script>
 <script src="js/vendor/ouical.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5gwLrm0wgH3IjuAS7RrxVgmIEPciFYb4&callback=initMap"></script>
 </body>
 </html>

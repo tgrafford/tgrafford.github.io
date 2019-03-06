@@ -11,10 +11,13 @@
 	display: inline-block;
 	text-transform: uppercase;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .btn:focus, .btn.active {
 	color: $white-color;
 	border-color: $accent-color;
 	background-color: $accent-color;
+}
+label.btn {
+    border-radius: 0;
 }
 .btn-white {
 	font-size: 13px;
@@ -25,7 +28,7 @@
 	display: inline-block;
 	border-color: $txt-light;
 }
-.btn-white:hover, .btn-white:focus {
+.btn-white:hover, .btn-white:focus, .btn-white.active {
 	color: $accent-color;
 	border-color: $accent-color;
 }
@@ -39,7 +42,7 @@
 	text-transform: uppercase;
 	background-color: $accent-color;
 }
-.btn-fill:hover, .btn-fill:focus {
+.btn-fill:hover, .btn-fill:focus, .btn-fill.active {
 	color: $white-color;
 	background-color: $accent-color-hover;
 	border-color: $accent-color-hover;

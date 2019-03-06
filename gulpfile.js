@@ -1,9 +1,28 @@
 'use strict';
 
 var gulp = require('gulp');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var gutil = require('gulp-util');
+
+/*
+var packageJSON = require('./package.json');
+var dependencies = Object.keys(packageJSON && packageJSON.dependencies || {});
+
+gulp.task('vendor', function() {
+  return browserify({debug:true})
+    .require(dependencies)
+    .bundle()
+    .on('error', function(err) {
+      gutil.log("Browserify Error", gutil.colors.red(err.message))
+    })
+    .pipe(source('vendor.bundle.js'))
+    .pipe(gulp.dest(__dirname + '/public/scripts'));
+});
+*/
 
 // compile scss to css
 gulp.task('sass', function () {
