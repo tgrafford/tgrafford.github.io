@@ -40,8 +40,9 @@ body {
   font-family: $sans-serif;
   font-weight: $light;
   color: $txt-primary;
-  -webkit-text-size-adjust: 100%;
   //fix for iOS
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 *:focus {
   outline: none !important;
@@ -119,6 +120,9 @@ section .header {
 /* ==========================================================================
 Animations
 ========================================================================== */
+.aos-init:not(.aos-animate):after {
+  position: fixed;
+}
 .pulse2 {
   animation-name: pulse2;
   animation-duration: 1s;
