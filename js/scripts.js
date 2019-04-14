@@ -1,5 +1,5 @@
 AOS.init({
-    disable: 'mobile' // disable animations on mobile as they just add a margin to the right
+    //    disable: 'mobile' // disable animations on mobile as they just add a margin to the right
 });
 
 $(document).ready(function () {
